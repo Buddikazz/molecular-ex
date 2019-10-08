@@ -1,0 +1,36 @@
+const account_model={
+    fields: 
+        [   "_id", 
+            "name", 
+            "email", 
+            "mobile_no",
+            "address",
+            "credit",
+            "dual_auth",
+            "status",
+            "sender_ids",
+            "viber_service_ids",
+            "dual_auth",
+            "black_lists",
+            "white_lists",
+            "template",
+            "ancestors",
+            "parent",
+            "priority",
+            "created_by",
+            "updated_by",
+            "created_at",
+            "updated_at"
+        ],
+    entityValidator: {
+        name: { type: "string", min: 2 },
+        email: { type: "string",optional: true },
+        credit: { type: "object",optional: true },
+        dual_auth: { type: "boolean",optional: true },
+        dual_auth: { type: "boolean",optional: true },
+        sender_ids: { type: "array",optional: true },
+        viber_service_ids: { type: "array",optional: true },
+        black_lists: { type: "array" ,optional: true},
+        white_lists: { type: "array" ,optional: true},
+    }
+};
